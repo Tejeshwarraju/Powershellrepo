@@ -3,7 +3,7 @@ multibranchPipelineJob('example') {
     
    branchSources {
         git {
-            remote('https://github.com/Tejeshwarraju/GitTest.git')
+            remote('https://github.com/Tejeshwarraju/Powershellrepo.git')
             credentialsId('')
             includes('*')
         }
