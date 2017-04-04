@@ -13,7 +13,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
-          stage('Run myscript') {
+          stage('Run python script') {
             steps {
                 
     sh('python myscript.py')
