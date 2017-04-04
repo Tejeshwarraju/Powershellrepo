@@ -16,7 +16,7 @@ pipeline {
           stage('Run myscript') {
             steps {
                 
-    posh './Test.ps1'
+    sh('python myscript.py')
                 
             }
         }
@@ -28,6 +28,3 @@ pipeline {
         }
     }
 }
-def posh(cmd) {
-                    bat 'powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "& ' + cmd + '"'
-                   } 
